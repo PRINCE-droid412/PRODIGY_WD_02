@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch-card">
+            <h1>Stopwatch Pro</h1>
+            <div id="time-display" arise-alive="polite" arise-atomic="true">00:00.00</div>
+
+            <div class="controls-grid">
+                <button id="lap-button" class="control-button lap-button" title="Record a lap" aria-label="Record Lap" disabled>
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="icon"><path d="M3.5 2.75a.75.75 0 00-1.5 0V18a.75.75 0 001.5 0V14h13.25A1.25 1.25 0 0018 12.75V3.25A1.25 1.25 0 0016.75 2H3.5V2.75zM16.5 3.5v8.75H10V10H8.5v2.25H4.25V3.5H16.5z"></path></svg>
+                    <span>Lap</span>
+                </button>
+                <button id="start-pause-button" class="control-button start-button" title="Start the timer" aria-label="Start Timer">
+                    <svg id="play-icon" fill="currentColor" viewBox="0 0 20 20" class="icon icon-play"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path></svg>
+                    <svg id="pause-icon" fill="currentColor" viewBox="0 0 20 20" class="icon icon-pause" style="display:none;"><path fillRule="evenodd" d="M5.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75A.75.75 0 007.25 3h-1.5zm6.5 0a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75a.75.75 0 00-.75-.75h-1.5z" clipRule="evenodd"></path></svg>
+                    <span id="start-pause-text">Start</span>
+                </button>
+            </div>
+            <div class="reset-button-container">
+                 <button id="reset-button" class="control-button reset-button" title="Reset the timer and laps" aria-label="Reset Timer" disabled>
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="icon"><path fillRule="evenodd" d="M15.312 5.224A.75.75 0 0116 6.012v4.453a.75.75 0 01-1.5 0V7.366l-3.097 3.097a.75.75 0 11-1.06-1.06l3.096-3.097H9.923a.75.75 0 010-1.5h4.453a.75.75 0 01.936.724zm-11.836-.94A6.502 6.502 0 0110.5 2a6.5 6.5 0 015.068 10.19l-1.286-1.286A4.989 4.989 0 0010.5 3.5a5 5 0 103.551 8.551l1.286 1.286A6.502 6.502 0 013.476 4.284z" clipRule="evenodd"></path></svg>
+                    <span>Reset</span>
+                </button>
+            </div>
+
+            <div id="laps-section" class="laps-section" style="display:none;" aria-live="polite">
+                <h2 class="laps-title">Laps</h2>
+                <ul id="laps-list" class="laps-list custom-scrollbar"></ul>
+            </div>
+            <p id="laps-placeholder" class="laps-placeholder" aria-live="polite">Click Start to begin.</p>
+        </div>
+        <footer class="footer">
+            <p>&copy; <span id="current-year"></span> JS Stopwatch. All rights reserved.</p>
+        </footer>
+        </div>
+
+    </div>
+    <script src="Script.js"></script>
+    
+</body>
+</html>
