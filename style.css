@@ -15,7 +15,7 @@ body {
 }
 
 .stopwatch-card {
-    background-color: #5e5499;
+    background-color: #2d1e83;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -23,14 +23,14 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 #time-display {
     font-size: 2.5em;
     margin-bottom: 25px;
-    color: #222;
+    color: #ffffff;
 }
 
 .controls-grid {
@@ -64,12 +64,12 @@ h1 {
 }
 
 .start-button {
-    background-color: #5cb85c;
+    background-color: #278b27;
     color: white;
 }
 
 .start-button:hover {
-    background-color: #4cae4c;
+    background-color: #409640;
 }
 
 .reset-button-container {
@@ -77,12 +77,12 @@ h1 {
 }
 
 .reset-button {
-    background-color: #d9534f;
+    background-color: #c24440;
     color: white;
 }
 
 .reset-button:hover {
-    background-color: #d43f3a;
+    background-color: #d33128;
 }
 
 .laps-section {
@@ -116,14 +116,14 @@ h1 {
 }
 
 .laps-placeholder {
-    color: #777;
+    color: #fffafa;
     font-style: italic;
 }
 
 .footer {
     text-align: center;
     margin-top: 20px;
-    color: #777;
+    color: #000000;
 }
 
 /* Custom Scrollbar */
@@ -142,7 +142,7 @@ h1 {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #999;
+    background: #ffffff;
 }
 
 .icon {
